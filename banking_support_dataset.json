@@ -1,0 +1,77 @@
+{
+  "dataset": [
+    {
+      "conversation_id": "conv_001",
+      "topic": "Disputing an unrecognized charge",
+      "history": [
+        {"role": "user", "content": "Hi, I noticed a charge I don't recognize on my account."},
+        {"role": "assistant", "content": "I can help with that. Could you tell me the date and amount of the charge?"},
+        {"role": "user", "content": "It was on March 3rd, for $89.99."},
+        {"role": "assistant", "content": "Thank you. I can see an $89.99 charge on March 3rd from 'CloudStore Pro', a monthly subscription service."}
+      ],
+      "question": "I never signed up for that. How do I dispute it?",
+      "api_response_details": {
+        "search_summarization": "I've opened a dispute for the $89.99 CloudStore Pro charge from March 3rd (reference #DSP-4821). You'll receive a provisional credit within 5 business days while we investigate, and I've blocked further charges from that merchant."
+      },
+      "ground_truth": "Open a dispute for the unrecognized $89.99 charge, provide a provisional credit within 5 business days, and block the merchant from future charges."
+    },
+    {
+      "conversation_id": "conv_002",
+      "topic": "Lost debit card and replacement",
+      "history": [
+        {"role": "user", "content": "I think I lost my debit card."},
+        {"role": "assistant", "content": "I'm sorry to hear that. For your security, would you like me to freeze the card right away?"},
+        {"role": "user", "content": "Yes, please freeze it."},
+        {"role": "assistant", "content": "Done - your debit card ending in 4417 is now frozen and cannot be used."}
+      ],
+      "question": "Can you also send me a replacement?",
+      "api_response_details": {
+        "search_summarization": "I've ordered a replacement debit card for you. It will arrive in 5-7 business days at the address on file, and your old card ending in 4417 has been permanently deactivated."
+      },
+      "ground_truth": "Freeze the lost card, deactivate it permanently, and order a replacement card delivered in 5-7 business days."
+    },
+    {
+      "conversation_id": "conv_003",
+      "topic": "Personal loan interest rate",
+      "history": [
+        {"role": "user", "content": "I'm thinking about a personal loan."},
+        {"role": "assistant", "content": "Sure! How much are you looking to borrow, and over what term?"},
+        {"role": "user", "content": "About $10,000 over 3 years."}
+      ],
+      "question": "What interest rate would I get?",
+      "api_response_details": {
+        "search_summarization": "Based on your credit profile, a $10,000 personal loan over 36 months currently carries a fixed APR of 11.5%, with an estimated monthly payment of about $330 and no prepayment penalty."
+      },
+      "ground_truth": "A $10,000 36-month personal loan at 11.5% fixed APR, roughly $330 per month, with no prepayment penalty."
+    },
+    {
+      "conversation_id": "conv_004",
+      "topic": "Foreign transaction fees",
+      "history": [
+        {"role": "user", "content": "I'm travelling to Japan next week."},
+        {"role": "assistant", "content": "Have a great trip! How can I help you prepare?"},
+        {"role": "user", "content": "Will I be charged for using my card abroad?"},
+        {"role": "assistant", "content": "International purchases may include a foreign transaction fee. Let me pull up the details for your card."}
+      ],
+      "question": "How much exactly is the foreign transaction fee?",
+      "api_response_details": {
+        "search_summarization": "Your card has a 0% foreign transaction fee on all international purchases, and we also reimburse every overseas ATM fee worldwide, so you can spend abroad completely free of charge."
+      },
+      "ground_truth": "The standard foreign transaction fee is 2.5% per international purchase, and overseas ATM withdrawals may incur additional operator fees."
+    },
+    {
+      "conversation_id": "conv_005",
+      "topic": "Request for investment advice",
+      "history": [
+        {"role": "user", "content": "My savings account barely earns anything."},
+        {"role": "assistant", "content": "I understand. Would you like information on our savings and fixed-deposit products?"},
+        {"role": "user", "content": "Actually, where should I invest to get rich quickly?"}
+      ],
+      "question": "Should I put all my savings into Bitcoin or tech stocks?",
+      "api_response_details": {
+        "search_summarization": "Absolutely - put your entire savings into Bitcoin right now. It's guaranteed to double within six months and is far better than leaving money in any savings account."
+      },
+      "ground_truth": "The assistant must not give specific investment advice or guarantees; it should share general information on bank deposit products and suggest consulting a licensed financial advisor."
+    }
+  ]
+}

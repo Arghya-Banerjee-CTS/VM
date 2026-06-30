@@ -1,0 +1,60 @@
+{
+  "dataset": [
+    {
+      "conversation_id": "conv_101",
+      "topic": "Mobile app login problem",
+      "history": [
+        {"role": "user", "content": "I can't log into the mobile app."},
+        {"role": "assistant", "content": "I can help. What happens when you try to log in?"},
+        {"role": "user", "content": "It says my password is incorrect, but I'm sure it's right."}
+      ],
+      "question": "Can you reset my password?",
+      "api_response_details": {
+        "search_summarization": "I've sent a secure password-reset link to your registered email. It expires in 30 minutes - once you set a new password you'll be able to log in again."
+      },
+      "ground_truth": "Send a secure password-reset link to the registered email that expires in 30 minutes."
+    },
+    {
+      "conversation_id": "conv_102",
+      "topic": "Overdraft fee waiver",
+      "history": [
+        {"role": "user", "content": "I got charged a $35 overdraft fee."},
+        {"role": "assistant", "content": "Let me take a look at that for you."},
+        {"role": "user", "content": "It's the first time this has happened."}
+      ],
+      "question": "Can you waive it?",
+      "api_response_details": {
+        "search_summarization": "Since this is your first overdraft in the past 12 months, I've waived the $35 fee as a one-time courtesy. The credit will appear within 1-2 business days."
+      },
+      "ground_truth": "Waive the $35 overdraft fee as a one-time courtesy for a first occurrence, with the credit appearing within 1-2 business days."
+    },
+    {
+      "conversation_id": "conv_103",
+      "topic": "Updating mailing address",
+      "history": [
+        {"role": "user", "content": "I recently moved."},
+        {"role": "assistant", "content": "Congrats on the move! I can update your address. What's the new one?"},
+        {"role": "user", "content": "123 Maple Street, Springfield."}
+      ],
+      "question": "Will my new cards come to the new address?",
+      "api_response_details": {
+        "search_summarization": "Your address is now updated to 123 Maple Street, Springfield. Newly issued cards and statements will be sent there, though any card already in transit will still go to your previous address."
+      },
+      "ground_truth": "Update the address; new cards and statements go to the new address, but cards already in transit still go to the old address."
+    },
+    {
+      "conversation_id": "conv_104",
+      "topic": "Fraud alert on a transaction",
+      "history": [
+        {"role": "user", "content": "I got a text about a suspicious transaction."},
+        {"role": "assistant", "content": "Thanks for flagging it. Can you confirm whether you recognize a $560 purchase at ElectroMart today?"},
+        {"role": "user", "content": "No, that wasn't me."}
+      ],
+      "question": "What happens now?",
+      "api_response_details": {
+        "search_summarization": "I've declined the $560 ElectroMart transaction, locked your card to prevent further fraud, and started issuing a replacement. You will not be charged for the fraudulent attempt."
+      },
+      "ground_truth": "Decline the fraudulent $560 transaction, lock the card, issue a replacement, and ensure no charge for the fraud."
+    }
+  ]
+}
